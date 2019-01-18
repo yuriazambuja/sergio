@@ -1,0 +1,22 @@
+<label for='email'>E-mail:</label>
+<input type='email' id='email' />
+<button type='button' id='cadastro'>Verificar</button>
+<script>
+$('#cadastro').click(function(){
+    gui_loading(true);
+    api_get_token($('#email').val(),gui_location(),'/',function(obj){
+        gui_loading(false);
+        if(obj){
+            gui_popup("Siga as intruções enviadas para o seu e-mail.");
+            gui_redirect("/");
+        }else{
+            gui_popup("Verifique o email informado e tente novamente.");
+        }
+    },gui_exception);
+});
+$(document).ready(function(){
+    if(gui_get_username()){
+        gui_redirect("/cadastro/");
+    }
+});
+</script>
