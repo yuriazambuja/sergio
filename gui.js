@@ -112,6 +112,14 @@ function gui_set_username(username){
 function gui_get_username(){
     return var_username;
 }
+function gui_cordova(){
+    document.addEventListener('deviceready', function() {
+        universalLinks.subscribe(null,function(event) {
+            gui_replace(event.url.substring(4+event.scheme.length+event.host.length+event.path.length));
+            gui_navegation();
+        });
+    },false);
+}
 $(window).keydown(function(event){
     if(event.keyCode == 13) {
       event.preventDefault();
@@ -119,7 +127,7 @@ $(window).keydown(function(event){
       return false;
     }
 });
-$(window).on('load',function(){
+$(window).on('load', function () {
     $("#hyperlink-sim").click(function(){
         gui_hyperlink(true);
     });
@@ -129,5 +137,6 @@ $(window).on('load',function(){
     sessionStorage.clear();
     gui_loading(false);
     gui_navegation();
+    gui_cordova();
 });
 $(window).on('popstate',gui_navegation);
