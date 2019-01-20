@@ -4,7 +4,7 @@
 <script>
 $('#cadastro').click(function(){
     gui_loading(true);
-    api_get_token($('#email').val(),gui_location(),'/',function(obj){
+    api_get_token($('#email').val(),"http://sergio.azamba.com.br/?",'',function(obj){
         gui_loading(false);
         if(obj){
             gui_popup("Siga as intruções enviadas para o seu e-mail.");
