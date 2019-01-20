@@ -10,4 +10,5 @@
     <preference name="Fullscreen" value="false" />
     <plugin name="cordova-plugin-whitelist" spec="1.0.0" />
     <icon src="app/icon.png" />
+    <preference name="android-targetSdkVersion" value="26"/>
 </widget>
