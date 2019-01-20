@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.azamba.sergio"
-        version="5.0.0"
-        xmlns="http://www.w3.org/ns/widgets"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Sérgio</name>
-    <content src="index.html" />
-    <access origin="*" />
-    <preference name="Fullscreen" value="false" />
-    <plugin name="cordova-plugin-whitelist" spec="1.0.0" />
-    <icon src="app/icon.png" />
-    <preference name="android-targetSdkVersion" value="26"/>
+<widget id="br.com.azamba.sergio" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
+        <name>Sérgio</name>
+        <content src="index.html" />
+        <access origin="*" />
+        <preference name="Fullscreen" value="false" />
+        <plugin name="cordova-plugin-whitelist" spec="1.0.0" />
+        <icon src="gui/appicon.png" />
+        <preference name="android-targetSdkVersion" value="26"/>
+        <plugin name="cordova-plugin-deeplinks" spec="~1.1.0" />
+        <universal-links>
+                <host name="sergio.azamba.com.br" />
+        </universal-links>
 </widget>
