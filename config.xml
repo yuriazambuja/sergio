@@ -7,6 +7,7 @@
         <plugin name="cordova-plugin-whitelist" spec="1.0.0" />
         <icon src="gui/appicon.png" />
         <preference name="android-targetSdkVersion" value="26"/>
+        <preference name="AndroidLaunchMode" value="singleInstance" />
         <plugin name="cordova-plugin-deeplinks" spec="~1.1.0" />
         <universal-links>
                 <host name="sergio.azamba.com.br" scheme="http" />
