@@ -6,8 +6,6 @@
         <preference name="Fullscreen" value="true" />
         <plugin name="cordova-plugin-whitelist" spec="1.0.0" />
         <access origin="*" />
-        <preference name="android-targetSdkVersion" value="26"/>
-        <preference name="AndroidLaunchMode" value="singleInstance" />
         <plugin name="cordova-plugin-deeplinks" spec="~1.1.0" />
         <universal-links>
                 <host name="sergio.azamba.com.br" scheme="http" />
@@ -16,4 +14,6 @@
                 <ios-team-id value="<TEAM_ID_FROM_MEMBER_CENTER>" />
                 -->
         </universal-links>
+        <preference name="android-targetSdkVersion" value="26"/>
+        <preference name="AndroidLaunchMode" value="singleInstance" />
 </widget>
