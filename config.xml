@@ -11,5 +11,8 @@
         <universal-links>
                 <host name="sergio.azamba.com.br" scheme="http" />
                 <host name="sergio.azamba.com.br" scheme="https" />
+                <!--
+                <ios-team-id value="<TEAM_ID_FROM_MEMBER_CENTER>" />
+                -->
         </universal-links>
 </widget>
