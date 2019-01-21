@@ -30,7 +30,7 @@ function api(cache,resource,object,callback,exception){
             }
         }
     };
-    request.open("POST","https://sergio.azamba.com.br/api/"+resource+".php",true);
+    request.open("POST","https://sergio-ws.azamba.com.br/"+resource+".php",true);
     request.setRequestHeader("content-type","application/json; charset=UTF-8");
     request.send(JSON.stringify(object));
     return false;
